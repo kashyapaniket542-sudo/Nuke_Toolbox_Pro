@@ -1,0 +1,7 @@
+{
+  "name": "Nuke Toolbox Pro",
+  "version": "2.0.0",
+  "type": "Python",
+  "nuke_min": "13.0",
+  "platforms": ["win", "mac", "linux"]
+}

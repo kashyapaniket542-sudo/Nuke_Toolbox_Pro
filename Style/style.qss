@@ -1,0 +1,197 @@
+    /* --- Base Widget --- */
+    QWidget {
+        background-color: #2e2e2e;
+        color: #cccccc;
+    }
+    QWidget[style="dark"] {
+        background-color: rgb(40, 40, 40);
+        border: none;
+    }
+    QWidget[style="mid-dark"] {
+        background-color: rgb(45, 45, 45);
+    }
+
+    /* --- Labels --- */
+    QLabel[style="border"], QLabel#border {
+        border: 1px solid rgb(30, 30, 30);
+        padding: 5px;
+    }
+    QLabel[style="fixed"] {
+        min-width: 110px;
+    }
+
+    /* --- Group Box --- */
+    QGroupBox#group_plain {
+        padding: 0px;
+        border: none;
+        outline: none;
+    }
+
+    /* --- Table Widget --- */
+    QHeaderView::section {
+        background-color: rgb(35, 35, 35);
+        padding: 10px;
+        border: none;
+    }
+    QTableWidget::item {
+        border-top: 0;
+        border-bottom: 1px solid rgb(40, 40, 40);
+    }
+    QTableWidget::item:selected {
+        background-color: rgb(50, 50, 50);
+        color: rgb(150, 150, 150);
+    }
+    QTableWidget::item:focus {
+        border: 0px;
+        outline: 0px;
+    }
+
+    /* --- Progress Bar --- */
+    QProgressBar {
+        text-align: center;
+        color: rgb(80, 80, 80);
+        vertical-align: top;
+    }
+    QProgressBar::chunk {
+        background-color: rgb(51, 204, 255);
+        vertical-align: top;
+        margin: 0.5px;
+    }
+
+    /* --- Push Buttons --- */
+    QPushButton {
+        background-color: #333333;
+        color: rgb(160, 160, 160);
+        outline: none;
+        border: 1px solid #444444;
+        height: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 3px;
+    }
+    QPushButton:hover {
+        background-color: rgba(20, 20, 20, 90);
+    }
+    QPushButton:pressed {
+        background-color: rgba(20, 20, 20, 70);
+    }
+    QPushButton:focus {
+        outline: none;
+    }
+    
+    /* Button Colors */
+    QPushButton[color="blue"] {
+        background-color: rgba(51, 204, 255, 150);
+        color: rgb(255, 255, 255);
+    }
+    QPushButton[color="blue"]:hover {
+        background-color: rgba(51, 204, 255, 130);
+    }
+    QPushButton[color="blue"]:pressed {
+        background-color: rgba(51, 204, 255, 120);
+    }
+    QPushButton[color="darkred"] {
+        background-color: rgba(70, 0, 0, 70);
+        color: rgb(255, 255, 255);
+    }
+    QPushButton[color="red"] {
+        background-color: rgb(35, 35, 35);
+        color: rgb(120, 30, 30);
+    }
+    QPushButton[color="grey"] {
+        background-color: rgba(20, 20, 20, 40);
+        color: rgb(200, 200, 200);
+    }
+    QPushButton[style="simple"], QToolButton[style="simple"] {
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+
+    /* --- Tool Buttons --- */
+    QToolButton:pressed {
+        background-color: rgb(20, 20, 20);
+    }
+
+    /* --- Inputs (Line Edit, Text Edit, Combo Box) --- */
+    QLineEdit, QLineEdit::selected, QTextEdit {
+        background-color: rgb(55, 55, 55);
+        padding: 5px;
+        border: 1px solid rgb(40, 40, 40);
+    }
+    QComboBox {
+        height: 27px;
+        border: 1px solid rgb(40, 40, 40);
+    }
+    QComboBox:editable {
+        background: rgb(60, 60, 60);
+    }
+    QComboBox:!editable, QComboBox::drop-down:editable {
+        background: rgb(50, 50, 50);
+    }
+    QComboBox:!editable:on, QComboBox::drop-down:editable:on {
+        background: rgb(30, 30, 30);
+    }
+    QComboBox QAbstractItemView {
+        background: rgb(40, 40, 40);
+    }
+
+    /* --- Radio Buttons & Checkboxes --- */
+    QRadioButton, QCheckBox {
+        border: none;
+        outline: none;
+    }
+    QCheckBox {
+        height: 24px;
+    }
+
+    /* --- Tabs --- */
+    QTabWidget::tab-bar {
+        alignment: left;
+    }
+    QTabWidget::pane {
+        border: none;
+        padding: 0;
+        background: rgb(45, 45, 45);
+    }
+    QTabBar:focus {
+        outline: none;
+        border: none;
+    }
+    QTabBar::tab {
+        padding: 10px;
+    }
+    QTabBar::tab:!selected {
+        background: rgb(60, 60, 60);
+    }
+    QTabBar::tab:selected {
+        background-color: rgba(51, 204, 255, 110);
+        outline: none;
+        border: none;
+    }
+
+    /* --- Sliders --- */
+    QSlider {
+        height: 20px;
+    }
+    QSlider::groove:horizontal {
+        border: 1px solid #666666;
+        background: rgb(40, 40, 40);
+        height: 20px;
+    }
+    QSlider::handle:horizontal {
+        background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #33ccff, stop:1 #33ccff);
+        border: 1px solid #777;
+        width: 40px;
+        margin-top: -2px;
+        margin-bottom: -2px;
+        border-radius: 4px;
+    }
+
+/* --- Tooltips --- */
+QToolTip {
+    background-color: #2b3236;
+    color: #dddddd;
+    border: 1px solid rgb(51, 204, 255);
+    padding: 6px;
+}

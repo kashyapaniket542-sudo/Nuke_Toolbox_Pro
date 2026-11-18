@@ -1,0 +1,23 @@
+{
+  "splash_title": "Nuke Toolbox Pro",
+  "splash_subtitle": "Tool Deployment & Version Management for Nuke",
+  "splash_image": "",
+  "splash_bg": "#1e1f24",
+  "splash_fg": "#f2a33a",
+  "splash_ms": 1800,
+  "splash_w": 520,
+  "splash_h": 260,
+  "install_root": "",
+  "init_dir": "",
+  "role": "td",
+  "catalog": "",
+  "self_update_url": "",
+  "keep_versions": 3,
+  "check_updates_on_start": false,
+  "artist_name": "",
+  "editor_theme": "PyCharm Darcula",
+  "icon_dir": "",
+  "ui_splitters": {},
+  "pycharm_path": "",
+  "sublime_path": ""
+}
